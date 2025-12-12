@@ -1,0 +1,19 @@
+[package]
+name = "tty-mood"
+version = "0.1.0"
+edition = "2021"
+description = "A local-first mood reader that analyzes shell history to generate mood signatures"
+
+[[bin]]
+name = "tty-mood"
+path = "src/main.rs"
+
+[dependencies]
+absurd-core = { path = "../absurd-core" }
+absurd-lexicon = { path = "../absurd-lexicon" }
+anyhow = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+time = { workspace = true }
+

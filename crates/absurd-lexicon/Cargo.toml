@@ -1,0 +1,12 @@
+[package]
+name = "absurd-lexicon"
+version = "0.1.0"
+edition = "2021"
+description = "Shared vocabulary for ABSURDTTY: moods, tones, and bureaucratic language"
+
+[dependencies]
+serde = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+

@@ -1,0 +1,18 @@
+[package]
+name = "noise"
+version = "0.1.0"
+edition = "2021"
+description = "An unhelpful instrument that responds to commands but never solves anything"
+
+[[bin]]
+name = "noise"
+path = "src/main.rs"
+
+[dependencies]
+absurd-core = { path = "../absurd-core" }
+absurd-lexicon = { path = "../absurd-lexicon" }
+anyhow = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
