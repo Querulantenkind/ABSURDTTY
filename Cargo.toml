@@ -1,0 +1,26 @@
+[workspace]
+members = [
+  "crates/absurd-core",
+  "crates/absurd-lexicon",
+  "crates/noise",
+  "crates/tty-mood",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+repository = "" # TODO
+authors = ["YOU <you@example.com>"] # TODO
+
+[workspace.dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+time = { version = "0.3", features = ["macros"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
